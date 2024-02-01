@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 import { IconBrightness2, IconMoon } from "@tabler/icons-react";
 
 function PageHeading() {
+  let screenWidth = window.innerWidth;
   const { toggleColorScheme, colorScheme } = useMantineColorScheme();
   return (
     <Stack align="center" m={"2rem"}>
@@ -59,7 +60,7 @@ function PageHeading() {
         </motion.div>
       </Group>
       <motion.div
-        animate={{ x: [-800, 0] }}
+        animate={{ x: [-1900, 0] }}
         transition={{ duration: 0.3, delay: 0.35 }}
       >
         <Text size={"3rem"} fw={700}>
@@ -67,7 +68,7 @@ function PageHeading() {
         </Text>
       </motion.div>
       <motion.div
-        animate={{ x: [-800, 0] }}
+        animate={{ x: [-1900, 0] }}
         transition={{
           duration: 0.3,
           delay: 2.35,
