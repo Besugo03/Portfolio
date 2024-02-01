@@ -1,11 +1,13 @@
 import { SimpleGrid } from "@mantine/core";
 import ProjectElement from "./components/ProjectElement";
 import PageHeading from "./components/PageHeading";
+import Introduction from "./components/Introduction";
 
 function App() {
   return (
     <>
       <PageHeading />
+      <Introduction />
       <SimpleGrid cols={{ base: 1, sm: 2, lg: 3 }} spacing={"1rem"}>
         <ProjectElement
           githubLink="https://github.com/saverioscagnoli/bomberman"
