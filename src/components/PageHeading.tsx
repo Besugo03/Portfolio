@@ -11,7 +11,6 @@ import { motion } from "framer-motion";
 import { IconBrightness2, IconMoon } from "@tabler/icons-react";
 
 function PageHeading() {
-  let screenWidth = window.innerWidth;
   const { toggleColorScheme, colorScheme } = useMantineColorScheme();
   return (
     <Stack align="center" m={"2rem"}>
