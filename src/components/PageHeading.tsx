@@ -8,7 +8,6 @@ import {
   useMantineColorScheme,
 } from "@mantine/core";
 import { motion } from "framer-motion";
-import avatarImage from "../Culone.png";
 import { IconBrightness2, IconMoon } from "@tabler/icons-react";
 
 function PageHeading() {
@@ -24,7 +23,12 @@ function PageHeading() {
             delay: 0.35,
           }}
         >
-          <Avatar size={"13rem"} src={avatarImage}></Avatar>
+          <Avatar
+            size={"13rem"}
+            src={
+              "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4bf9339b-10fd-46d2-953d-bcd1d013a2ed/dekffax-c328b79a-687d-4d79-ae5d-7b892d024e3a.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRiZjkzMzliLTEwZmQtNDZkMi05NTNkLWJjZDFkMDEzYTJlZFwvZGVrZmZheC1jMzI4Yjc5YS02ODdkLTRkNzktYWU1ZC03Yjg5MmQwMjRlM2EuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.LDlCqxkMJqi4zXOM1JETUwO8R3emAPZ34gjOu1u05eg"
+            }
+          ></Avatar>
         </motion.div>
 
         <motion.div drag dragMomentum={false}>
@@ -71,7 +75,7 @@ function PageHeading() {
           stiffness: 100,
         }}
       >
-        <Text size={"2rem"}>But you can call me Besughino</Text>
+        <Text size={"2rem"}>But everybody calls me Besughino</Text>
       </motion.div>
     </Stack>
   );

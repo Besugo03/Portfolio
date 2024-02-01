@@ -58,7 +58,7 @@ function ProjectElement({
           <Text size="sm" c="dimmed">
             {description}
           </Text>
-          <motion.div whileHover={{ scale: 1.05, rotateZ: -2 }}>
+          <motion.div whileHover={{ scale: 1.05, y: -5 }}>
             <Button
               onClick={() => {
                 window.open(githubLink);
