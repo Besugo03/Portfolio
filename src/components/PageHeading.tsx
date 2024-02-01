@@ -1,13 +1,8 @@
 import {
   ActionIcon,
   Avatar,
-  Box,
-  Button,
-  ButtonGroup,
-  Center,
   Flex,
   Group,
-  Space,
   Stack,
   Text,
   useMantineColorScheme,
