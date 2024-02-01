@@ -1,5 +1,4 @@
-import { BackgroundImage, SimpleGrid } from "@mantine/core";
-import Navbar from "./components/Navbar";
+import { SimpleGrid } from "@mantine/core";
 import ProjectElement from "./components/ProjectElement";
 import PageHeading from "./components/PageHeading";
 
