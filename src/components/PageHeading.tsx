@@ -62,7 +62,7 @@ function PageHeading() {
         animate={{ x: [-1900, 0] }}
         transition={{ duration: 0.3, delay: 0.35 }}
       >
-        <Text size={"3rem"} fw={700}>
+        <Text size={"3rem"} fw={700} lts={-1.5}>
           Hi, I'm Alessandro Pizzuco
         </Text>
       </motion.div>
