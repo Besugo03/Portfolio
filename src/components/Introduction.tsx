@@ -43,7 +43,7 @@ function Introduction() {
             >
               I am currently studying Computer Science at the University of
               Sapienza in Rome, and I am looking for opportunities to learn and
-              grow as a
+              grow as a developer.
             </Text>
           </Paper>
         </Group>
