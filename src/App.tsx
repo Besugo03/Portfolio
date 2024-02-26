@@ -15,14 +15,14 @@ function App() {
       <Introduction />
       <SimpleGrid cols={{ base: 1, sm: 2, lg: 4 }} spacing={"1rem"}>
         <ProjectElement
-          githubLink="https://github.com/saverioscagnoli/bomberman"
+          ProjectLink="https://github.com/saverioscagnoli/bomberman"
           image="https://www.retrogames.cz/games/1037/SNES_01.gif"
           description="A Bomberman clone made in Java as part of my university course. It was made in collaboration with a fellow student, through Github. It was made from complete scratch, engineless."
           title="JBomberman"
           language="java"
         />
         <ProjectElement
-          githubLink="https://github.com/saverioscagnoli/bomberman"
+          ProjectLink=""
           image={WebSiteImage}
           description="Made with love and React. This was my first project using this framework, and it was a great learning experience."
           title="This very website"
@@ -33,21 +33,21 @@ function App() {
           description="A data glove made as part of an AR/VR project of mine for easy, intuitive and natural interaction, with a patent-pending unique design and features in its class."
           language="arduino"
           image={DataGloveImage}
-          githubLink=""
+          ProjectLink="https://www.youtube.com/shorts/s-UrG1kOOLk"
         />
         <ProjectElement
           title="Theia Visor"
           description="Where my passion from AR/VR started. As soon as i had an eyepatch with a 720p display, i had a need to have better, quicker, and more intuitive interaction with it. This led me to the creation of the Haephaestus data glove."
           language="embedded"
           image={TheiaImage}
-          githubLink=""
+          ProjectLink=""
         />
         <ProjectElement
           title="My Keyboards"
           description="All this programming, projects, and the notetaking for university, led me to design a more efficient way to type. I have designed and built my own keyboards, with a custom layout and QMK or custom firmwares."
           language="embedded"
           image={KeyboardImage}
-          githubLink=""
+          ProjectLink=""
         />
       </SimpleGrid>
     </>

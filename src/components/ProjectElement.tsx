@@ -6,6 +6,7 @@ import {
   IconBrandReact,
   IconInfinity,
   IconCpu,
+  IconBrandYoutube,
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 
@@ -13,7 +14,7 @@ interface ProjectElementProps {
   title: string;
   description: string;
   image: string;
-  githubLink: string;
+  ProjectLink: string;
   language: string;
 }
 
@@ -21,7 +22,7 @@ function ProjectElement({
   title,
   description,
   image,
-  githubLink,
+  ProjectLink,
   language,
 }: ProjectElementProps) {
   const githubIcon = <IconBrandGithub />;
@@ -67,20 +68,30 @@ function ProjectElement({
           <Text size="sm" c="dimmed">
             {description}
           </Text>
-          <motion.div whileHover={{ scale: 1.05, y: -5 }}>
-            <Button
-              onClick={() => {
-                window.open(githubLink);
-              }}
-              color="black"
-              rightSection={githubIcon}
-              fullWidth
-              mt="md"
-              radius="md"
-            >
-              Visit the github page
-            </Button>
-          </motion.div>
+          {ProjectLink === "" ? null : (
+            <motion.div whileHover={{ scale: 1.05, y: -5 }}>
+              <Button
+                onClick={() => {
+                  window.open(ProjectLink);
+                }}
+                color={ProjectLink.includes("youtube") ? "red" : "black"}
+                rightSection={
+                  ProjectLink.includes("youtube") ? (
+                    <IconBrandYoutube />
+                  ) : (
+                    githubIcon
+                  )
+                }
+                fullWidth
+                mt="md"
+                radius="md"
+              >
+                {ProjectLink.includes("youtube")
+                  ? "Watch the Youtube demo"
+                  : "Visit the Github page"}
+              </Button>
+            </motion.div>
+          )}
         </Card>
       </motion.div>
     </Center>
