@@ -4,7 +4,7 @@ import PageHeading from "./components/PageHeading";
 import Introduction from "./components/Introduction";
 
 import DataGloveImage from "./DataGlove.png";
-import WebSiteImage from "./webSite.png";
+import WebSiteImage from "./website.png";
 import ZenImage from "./Zen.png";
 import FrierenImage from "./frieren.png";
 import TheiaImage from "./Theia.jpeg";
