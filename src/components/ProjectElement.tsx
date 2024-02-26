@@ -4,6 +4,8 @@ import {
   IconCoffee,
   IconBrandPython,
   IconBrandReact,
+  IconInfinity,
+  IconCpu,
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 
@@ -38,6 +40,13 @@ function ProjectElement({
       labelIcon = <IconBrandReact />;
       labelColor = "cyan";
       break;
+    case "arduino":
+      labelIcon = <IconInfinity />;
+      labelColor = "teal";
+      break;
+    case "embedded":
+      labelIcon = <IconCpu />;
+      labelColor = "green";
   }
 
   return (
