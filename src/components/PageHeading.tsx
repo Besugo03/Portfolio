@@ -9,9 +9,11 @@ import {
 } from "@mantine/core";
 import { motion } from "framer-motion";
 import { IconBrightness2, IconMoon } from "@tabler/icons-react";
+import useLanguage from "../hooks/useLanguage";
 
 function PageHeading() {
   const { toggleColorScheme, colorScheme } = useMantineColorScheme();
+  const { language } = useLanguage();
   return (
     <Stack align="center" m={"2rem"}>
       <Group justify="space-between" w={"100%"}>
@@ -63,7 +65,9 @@ function PageHeading() {
         transition={{ duration: 0.3, delay: 0.35 }}
       >
         <Text size={"3rem"} fw={700} lts={-1.5}>
-          Hi, I'm Alessandro Pizzuco
+          {language === "it"
+            ? "Ciao, sono Alessandro Pizzuco"
+            : "Hi, I'm Alessandro Pizzuco"}
         </Text>
       </motion.div>
       <motion.div
@@ -75,7 +79,11 @@ function PageHeading() {
           stiffness: 100,
         }}
       >
-        <Text size={"2rem"}>But everybody calls me Besughino</Text>
+        <Text size={"2rem"}>
+          {language === "en"
+            ? "But everybody calls me Besughino"
+            : "Ma tutti mi chiamano Besughino"}
+        </Text>
       </motion.div>
     </Stack>
   );

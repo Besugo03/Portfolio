@@ -9,26 +9,32 @@ import {
   IconBrandYoutube,
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
+import useLanguage from "../hooks/useLanguage";
 
 interface ProjectElementProps {
   title: string;
+  titleIT: string;
   description: string;
+  descriptionIT: string;
   image: string;
   ProjectLink: string;
-  language: string;
+  programmingLanguage: string;
 }
 
 function ProjectElement({
   title,
+  titleIT,
   description,
+  descriptionIT,
   image,
   ProjectLink,
-  language,
+  programmingLanguage,
 }: ProjectElementProps) {
+  const { language } = useLanguage();
   const githubIcon = <IconBrandGithub />;
   let labelIcon;
   let labelColor;
-  switch (language.toLowerCase()) {
+  switch (programmingLanguage.toLowerCase()) {
     case "java":
       labelIcon = <IconCoffee />;
       labelColor = "orange";
@@ -59,14 +65,14 @@ function ProjectElement({
           </Card.Section>
 
           <Group justify="space-between" mt="md" mb="xs">
-            <Text fw={600}>{title}</Text>
+            <Text fw={600}>{language == "en" ? title : titleIT}</Text>
             <Badge color={labelColor} leftSection={labelIcon} h={"1.5rem"}>
-              {language}
+              {programmingLanguage}
             </Badge>
           </Group>
 
           <Text size="sm" c="dimmed">
-            {description}
+            {language == "en" ? description : descriptionIT}
           </Text>
           {ProjectLink === "" ? null : (
             <motion.div whileHover={{ scale: 1.05, y: -5 }}>
@@ -87,8 +93,12 @@ function ProjectElement({
                 radius="md"
               >
                 {ProjectLink.includes("youtube")
-                  ? "Watch the Youtube demo"
-                  : "Visit the Github page"}
+                  ? language == "en"
+                    ? "Watch the Demo"
+                    : "Guarda il video"
+                  : language == "en"
+                  ? "Go to the repository"
+                  : "Vai alla repository di Github"}
               </Button>
             </motion.div>
           )}
