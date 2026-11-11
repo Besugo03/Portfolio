@@ -15,7 +15,7 @@ function App() {
       <Introduction />
       <SimpleGrid cols={{ base: 1, sm: 2, lg: 4 }} spacing={"1rem"}>
         <ProjectElement
-          ProjectLink="https://github.com/saverioscagnoli/bomberman"
+          ProjectLink="https://github.com/Besugo03/bomberman"
           image="https://www.retrogames.cz/games/1037/SNES_01.gif"
           description="A Bomberman clone made in Java as part of my university course. It was made in collaboration with a fellow student, through Github. It was made from complete scratch, engineless."
           descriptionIT="Un clone di Bomberman fatto in Java come parte del mio corso universitario. È stato realizzato in collaborazione con un altro studente, tramite Github. È stato realizzato da zero, senza engine."
@@ -59,6 +59,7 @@ function App() {
           image={KeyboardImage}
           ProjectLink=""
         />
+
       </SimpleGrid>
     </>
   );

@@ -1,6 +1,5 @@
 import {
   ActionIcon,
-  Avatar,
   Center,
   Flex,
   Text,
