@@ -8,7 +8,8 @@ import WebSiteImage from "./assets/website.png";
 import TheiaImage from "./assets/Theia.jpeg";
 import KeyboardImage from "./assets/hotshi.png";
 import KeyboardImageDactyl from "./assets/dactyl.png";
-import WasaTextImage from "./assets/wasapp.png"
+import WasaTextImage from "./assets/wasapp.png";
+import reencoreImage from "./assets/re-encore.png"
 
 function App() {
   return (
@@ -43,7 +44,7 @@ function App() {
             { kind: "github", url: "https://github.com/Besugo03/re-encore" },
             { kind: "blog", url: "https://blog.alessandropizzuco.com/Projects/Saving-money-for-storage-in-the-doom-of-AI-era-computing-prices" },
           ]}
-          images={[]}
+          images={[reencoreImage]}
           description="A small docker container based on python with a gradio UI that uses VMAF and ab-av1 to re-encode your media library and save space without any noticeable visual difference"
           descriptionIT="Un piccolo contenitore docker basato su python e con UI in Gradio che utilizza i tool VMAF e ab-av1 per ri-codificare la propria media library e risparmiare spazio senza nessuna differenza all'occhio nudo."
           titleIT="re-encore"
