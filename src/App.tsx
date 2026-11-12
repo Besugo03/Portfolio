@@ -3,7 +3,7 @@ import ProjectElement from "./components/ProjectElement";
 import PageHeading from "./components/PageHeading";
 import Introduction from "./components/Introduction";
 
-import DataGloveImage from "./assets/DataGlove.png";
+import DataGloveImage from "./assets/haephaestus.png";
 import WebSiteImage from "./assets/website.png";
 import TheiaImage from "./assets/Theia.jpeg";
 import KeyboardImage from "./assets/hotshi.png";
@@ -78,7 +78,7 @@ function App() {
           programmingLanguages={["arduino", "embedded"]}
           images={[DataGloveImage]}
           projectLinks={[
-            { kind: "youtube", url: "https://www.youtube.com/shorts/s-UrG1kOOLk" },
+            // { kind: "youtube", url: "https://www.youtube.com/shorts/s-UrG1kOOLk" },
           ]}
         />
         <ProjectElement
