@@ -8,6 +8,7 @@ import WebSiteImage from "./assets/website.png";
 import TheiaImage from "./assets/Theia.jpeg";
 import KeyboardImage from "./assets/hotshi.png";
 import KeyboardImageDactyl from "./assets/dactyl.png";
+import WasaTextImage from "./assets/wasapp.png"
 
 function App() {
   return (
@@ -25,6 +26,40 @@ function App() {
           titleIT="JBomberman"
           title="JBomberman"
           programmingLanguages={["java"]}
+        />
+        <ProjectElement
+          projectLinks={[
+            { kind: "github", url: "https://github.com/Besugo03/WasaText" },
+          ]}
+          images={[WasaTextImage]}
+          description="A messaging app built using the Vue framework as my homework entry for the Web And Software Architecture university course, with a GO backend. Supports various modern features such as animated avatars and working embeds"
+          descriptionIT="Un'app di messagistica costruita con il framework Vue e backend GO come homework per il progetto universitario di Web And Software Architecture. Supporta varie feature di app moderne come avatar animati e embed."
+          titleIT="WasaText/WASApp"
+          title="WasaText/WASApp"
+          programmingLanguages={["docker", "vue", "go"]}
+        />
+        <ProjectElement
+          projectLinks={[
+            { kind: "github", url: "https://github.com/Besugo03/re-encore" },
+            { kind: "blog", url: "https://blog.alessandropizzuco.com/Projects/Saving-money-for-storage-in-the-doom-of-AI-era-computing-prices" },
+          ]}
+          images={[]}
+          description="A small docker container based on python with a gradio UI that uses VMAF and ab-av1 to re-encode your media library and save space without any noticeable visual difference"
+          descriptionIT="Un piccolo contenitore docker basato su python e con UI in Gradio che utilizza i tool VMAF e ab-av1 per ri-codificare la propria media library e risparmiare spazio senza nessuna differenza all'occhio nudo."
+          titleIT="re-encore"
+          title="re-encore"
+          programmingLanguages={["docker", "python"]}
+        />
+        <ProjectElement
+          title="My Keyboards"
+          titleIT="Le mie tastiere"
+          description="All of my programming for projects and the notetaking for university led me to seek more efficient ways to type. I have tried open source ergonomic keyboards (Corne, Sofle and Gergoplex) but ultimately designed and built my own. If you are interested, please check out my blog's HCI writeups and design decisions below!"
+          descriptionIT="Tutto questo programmare per i progetti e scrivere appunti universitari mi ha portato a cercare un modo più efficiente di scrivere. Ho provato delle tastiere ergonomiche open-source (Corne, Sofle e Gergoplex), ma infine mi sono trovato meglio a crearne di mie. Per chi e' interessato, vi invito a visitare il mio blog, dove potete trovare articoli riguardanti le mie decisioni di design (sia hardware che software) e analisi di interazione uomo-macchina più in generale qui sotto!"
+          programmingLanguages={["embedded", "arduino"]}
+          images={[KeyboardImage, KeyboardImageDactyl]}
+          projectLinks={[
+            { kind: "blog", url: "https://blog.alessandropizzuco.com/Projects/Keyboards" },
+          ]}
         />
         <ProjectElement
           images={[WebSiteImage]}
@@ -52,17 +87,6 @@ function App() {
           descriptionIT="Dove è iniziata la mia passione per AR/VR. Con questo monocolo dotato di un display 720p, ho avuto la necessità di avere un'interazione piu' portatile, più veloce e più intuitiva di un mouse. Questo mi ha portato alla creazione del guanto smart Haephaestus."
           programmingLanguages={["embedded"]}
           images={[TheiaImage]}
-        />
-        <ProjectElement
-          title="My Keyboards"
-          titleIT="Le mie tastiere"
-          description="All of my programming for projects and the notetaking for university led me to seek more efficient ways to type. I have tried open source ergonomic keyboards (Corne, Sofle and Gergoplex) but ultimately designed and built my own. If you are interested, please check out my blog's HCI writeups and design decisions below!"
-          descriptionIT="Tutto questo programmare per i progetti e scrivere appunti universitari mi ha portato a cercare un modo più efficiente di scrivere. Ho provato delle tastiere ergonomiche open-source (Corne, Sofle e Gergoplex), ma infine mi sono trovato meglio a crearne di mie. Per chi e' interessato, vi invito a visitare il mio blog, dove potete trovare articoli riguardanti le mie decisioni di design (sia hardware che software) e analisi di interazione uomo-macchina più in generale qui sotto!"
-          programmingLanguages={["embedded", "arduino"]}
-          images={[KeyboardImage, KeyboardImageDactyl]}
-          projectLinks={[
-            { kind: "blog", url: "https://blog.alessandropizzuco.com" },
-          ]}
         />
 
       </SimpleGrid>

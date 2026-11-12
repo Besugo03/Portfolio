@@ -1,11 +1,14 @@
 import type { ReactNode } from "react";
 import {
   IconCode,
+  IconBrandDocker,
   IconCoffee,
   IconBrandPython,
   IconBrandReact,
   IconInfinity,
   IconCpu,
+  IconBrandGolang,
+  IconBrandVue
 } from "@tabler/icons-react";
 
 interface LanguageBadgeInfo {
@@ -27,6 +30,17 @@ export const languageBadges: Record<string, LanguageBadgeInfo> = {
   react: { label: "React", color: "cyan", icon: <IconBrandReact /> },
   arduino: { label: "Arduino", color: "teal", icon: <IconInfinity /> },
   embedded: { label: "Embedded", color: "green", icon: <IconCpu /> },
+  go: {
+    label: "Go", color: "cyan", icon: <IconBrandGolang />
+  },
+  vue: {
+    label: "Vue", color: "green", icon: <IconBrandVue />
+  },
+  docker: {
+    label: "Docker", color: "cyan", icon: <IconBrandDocker />
+  },
+
+
 };
 
 export function getLanguageBadge(language: string): LanguageBadgeInfo {
